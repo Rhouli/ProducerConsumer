@@ -1,0 +1,92 @@
+RYAN HOULIHAN 
+
+Description:
+  Simple implementation of the producer consumer problem using
+  semaphores and mutex's. 
+
+ Main:                                                                                                 
+ Creates NUM_PRODUCER producer threads, NUM_COMSUMER consumer threads, with a                            buffer of size BUFFSIZE. Creates all threads, a mutex, two sempahors, one for                         
+ the empty status, one for the full status. Then it joins the threads and waits                        
+ for them to finish producing and consuming before exiting.                                            
+                                                                                                        
+Producer:                                                                                             
+ Sleeps randomly to show that there truly is mutual exclusion.                                         
+ Produces a random integer as a product. Checks to make sure the buffer is not                         
+ full and then it trys to acquire a lock on the mutex and is blocked if no lock is                     
+ avaliable. One the lock is freed it acquires the lock and enters into the critical                    
+ section. It adds the product to the buffer and then releases the lock and sents a signal              
+ to the full semaphore.                                                                                
+                                                                                                        
+Consumer:                                                                                             
+  Sleeps randomly to show that there truly is mutual exclusion.                                         
+  Makes sure buffer is not empty, if it is it blocks. Once the buffer is not empty it                   
+  attempts to acquire a lock on the mutex. Once the mutex is unlocked and it acquires a                 
+  lock it "consumes" (reads)  an item from the buffer. It then unlocks the mutex and                    
+  signals the empty semaphor.    
+
+Testing:	   
+  For testing purposes I added in sleep() in the producer and consumer threads
+  to occasionaly stop them and mess them up if there was no actual mutual exlusivness. I
+  then made my program print a log file for each version and inspected the log file to make
+  sure there where no inconsistinces.
+
+Algorithm: 
+
+#define BUFFSIZE;
+#define NUM_PRODUCER 1
+#define NUM_CONSUMER 1
+
+binary full // 0 if full 1 if not;
+binary empty // 0 if empty 1 if not;
+binary producer;
+binary consumer;
+binary mutex = 1;
+int conPos = 0
+int proPos = 0
+
+Produce:
+	create something
+	return creation;
+
+Consume[product]:
+	print product
+
+Producer:
+	product = Produce()
+
+	// Block if full otherwise obtain lock to critical section
+	WaitP(empty)
+	WaitP(mutext)
+	buffer[proPos%BUFFSIZE] = product
+	proPos++;
+	
+	// Declare consumer is out of critical section
+	SignalV(mutex)
+	// Increment full slots by one
+	SignalV(full)
+Consumer:
+	// Lock out the producer for mutal exclussion 
+	// Block if empty
+	WaitP(full)
+	WaitP(mutex)
+
+	product = buffer[conPos%BUFFSIZE]
+	conPos++
+	
+	// Declare Consumer is out of critical section
+	SignalV(mutex)
+	// Incrememnt empty slots by one
+	SignalV(empty)
+
+	Consume(product)
+
+WaitP[int mutex]:
+	while(mutex)
+		; //do nothing
+	mutex--
+	
+SignalV[int mutex]:
+	mutex++
+
+
+
