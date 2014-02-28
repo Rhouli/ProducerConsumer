@@ -1,0 +1,96 @@
+Produced 68 <==
+Produced 1 <==
+Produced 25 <==
+Consumed 68 ==>
+Produced 59 <==
+Produced 65 <==
+Produced 46 <==
+Consumed 1 ==>
+Produced 28 <==
+Produced 92 <==
+Produced 43 <==
+Consumed 25 ==>
+Produced 37 <==
+Consumed 59 ==>
+Produced 5 <==
+Produced 54 <==
+Produced 83 <==
+Produced 17 <==
+Consumed 65 ==>
+Produced 96 <==
+Consumed 46 ==>
+Consumed 28 ==>
+Consumed 92 ==>
+Produced 27 <==
+Consumed 43 ==>
+Produced 39 <==
+Produced 13 <==
+Consumed 37 ==>
+Produced 100 <==
+Produced 95 <==
+Consumed 5 ==>
+Produced 12 <==
+Produced 34 <==
+Consumed 54 ==>
+Produced 65 <==
+Consumed 83 ==>
+Produced 12 <==
+Produced 69 <==
+Consumed 17 ==>
+Consumed 96 ==>
+Produced 45 <==
+Produced 58 <==
+Produced 60 <==
+Consumed 27 ==>
+Consumed 39 ==>
+Produced 42 <==
+Produced 79 <==
+Produced 36 <==
+Consumed 13 ==>
+Produced 43 <==
+Produced 7 <==
+Consumed 100 ==>
+Consumed 95 ==>
+Produced 43 <==
+Produced 49 <==
+Consumed 12 ==>
+Produced 6 <==
+Consumed 34 ==>
+Produced 30 <==
+Consumed 65 ==>
+Produced 51 <==
+Consumed 12 ==>
+Produced 2 <==
+Consumed 69 ==>
+Produced 49 <==
+Consumed 45 ==>
+Consumed 58 ==>
+Consumed 60 ==>
+Consumed 42 ==>
+Consumed 79 ==>
+Consumed 36 ==>
+Consumed 43 ==>
+Consumed 7 ==>
+Consumed 43 ==>
+Consumed 49 ==>
+Consumed 6 ==>
+Consumed 30 ==>
+Consumed 51 ==>
+Consumed 2 ==>
+Consumed 49 ==>
+Threads have completed
+Buffer[0] is __**   36 **__
+Buffer[1] is __**   43 **__
+Buffer[2] is __**    7 **__
+Buffer[3] is __**   43 **__
+Buffer[4] is __**   49 **__
+Buffer[5] is __**    6 **__
+Buffer[6] is __**   30 **__
+Buffer[7] is __**   51 **__
+Buffer[8] is __**    2 **__
+Buffer[9] is __**   49 **__
+Buffer[10] is __**   45 **__
+Buffer[11] is __**   58 **__
+Buffer[12] is __**   60 **__
+Buffer[13] is __**   42 **__
+Buffer[14] is __**   79 **__
