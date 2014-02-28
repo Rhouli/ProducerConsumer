@@ -1,7 +1,4 @@
-/* Ryan Houlihan
- * Operating Systems CIS 3207
- * Lab 3: Windows producer-consumer problem
- * Source File
+/* Author: Ryan Houlihan
  *
  * Main:
  * Creates NUM_PRODUCER producer threads, NUM_COMSUMER consumer threads, with a 

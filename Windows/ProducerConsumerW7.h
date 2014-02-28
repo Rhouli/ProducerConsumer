@@ -1,7 +1,4 @@
-/* Ryan Houlihan
- * Operating Systems CIS 3207
- * Lab 3: Windows producer-consumer problem
- * Header
+/* Author: Ryan Houlihan
  */
 
 #ifndef ProducerConsumer
